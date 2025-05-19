@@ -30,7 +30,7 @@ const teamMembers = [
   {
     name: "Mr. Dhamodharan",
     title: "Chair Committee – Student Coordination",
-    image: "/assets/profile-6.png",
+    image: "/assets/profile-11.jpg",
   },
 ];
 
