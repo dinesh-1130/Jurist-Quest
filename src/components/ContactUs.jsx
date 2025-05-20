@@ -56,7 +56,7 @@ export default function ContactSection() {
                 onClick={() => setShowFormMobile(true)}
                 className="bg-[#6B21A8] text-white py-3 px-6 rounded-lg font-bold transition hover:bg-[#581c87]"
               >
-                Register Now
+                Contact Us
               </button>
             </div>
           </div>

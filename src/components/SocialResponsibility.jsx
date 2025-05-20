@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 const teamMembers = [
   {
     name: "Mr. Selvakumar",
-    title: "Chair Committee – Legal Affairs",
+    title: "Chair Committee – Operations ",
     image: "/assets/profile-6.png",
   },
   {
@@ -24,12 +24,12 @@ const teamMembers = [
   },
   {
     name: "Mr. Krishnakumar",
-    title: "Chair Committee – Operations",
+    title: "Chair Committee – Legal Affairs",
     image: "/assets/profile-9.jpeg",
   },
   {
     name: "Mr. Dhamodharan",
-    title: "Chair Committee – Student Coordination",
+    title: "Jury coordinator",
     image: "/assets/profile-15.jpeg",
   },
 ];
@@ -139,7 +139,7 @@ export default function TeamSection() {
         </div>
 
         {/* CTA Button */}
-        <div className="text-center mt-12">
+        {/* <div className="text-center mt-12">
           <button
             className="inline-block text-white px-6 py-3 rounded-full font-semibold transition"
             style={{ backgroundColor: "#6B21A8" }}
@@ -149,7 +149,7 @@ export default function TeamSection() {
           >
             Register now
           </button>
-        </div>
+        </div> */}
       </section>
 
       {/* Modal Form */}

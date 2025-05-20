@@ -42,13 +42,13 @@ const VisionMission = () => {
               {item.title}
             </h3>
             <p className="text-gray-700 mb-4 text-sm leading-relaxed">{item.text}</p>
-            <a
+            {/* <a
               href="/register"
               className="font-medium hover:underline"
               style={{ color: "#6B21A8" }}
             >
               Register now
-            </a>
+            </a> */}
           </div>
         ))}
       </div>
@@ -80,12 +80,12 @@ const VisionMission = () => {
             </div>
             <div className="px-6 py-4">
               <p className="text-sm text-gray-700 mb-4">{item.text}</p>
-              <a
+              {/* <a
                 href="/register"
                 className="inline-block text-sm font-medium text-[#6B21A8] hover:underline"
               >
                 Register now
-              </a>
+              </a> */}
             </div>
           </div>
         ))}

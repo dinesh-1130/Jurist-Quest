@@ -1,10 +1,8 @@
-import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import BannerBg from "/assets/hero-17.jpg";
 
 export default function About() {
   const navigate = useNavigate();
-  const [showForm, setShowForm] = useState(false);
 
   return (
     <>
@@ -64,9 +62,9 @@ export default function About() {
               data-aos="fade-up"
               style={{ backgroundColor: "#6B21A8" }}
               className="rounded hover:bg-[#581c87] text-white px-6 py-3 font-semibold transition"
-              onClick={() => setShowForm(true)}
+              onClick={() => navigate("#contactus")}
             >
-              Register now
+              Learn More
             </button>
           </div>
         </div>
@@ -89,38 +87,13 @@ export default function About() {
             Conceptualized by Crosby Law Associates & RK Legal Partners, in association with premier legal institutions.
           </p>
           <button
-            onClick={() => setShowForm(true)}
+            onClick={() => navigate("#contactus")}
             className="w-full bg-[#6B21A8] text-white py-3 rounded-lg font-semibold hover:bg-[#581c87] transition"
           >
-            Register Now
+            Learn More
           </button>
         </div>
       </div>
-
-      {/* ---------- Modal Form ---------- */}
-      {showForm && (
-        <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center px-4">
-          <div className="bg-white rounded-2xl shadow-2xl p-6 w-full max-w-md relative">
-            <h3 className="text-2xl font-bold text-gray-800 mb-4">Register</h3>
-            <form className="space-y-3">
-              <input type="text" placeholder="Full Name" className="w-full px-4 py-3 border rounded-lg focus:ring-[#6B21A8] focus:outline-none" />
-              <input type="email" placeholder="Email Address" className="w-full px-4 py-3 border rounded-lg focus:ring-[#6B21A8] focus:outline-none" />
-              <input type="tel" placeholder="Mobile Number" className="w-full px-4 py-3 border rounded-lg focus:ring-[#6B21A8] focus:outline-none" />
-              <input type="text" placeholder="Full Address" className="w-full px-4 py-3 border rounded-lg focus:ring-[#6B21A8] focus:outline-none" />
-              <input type="text" placeholder="District" className="w-full px-4 py-3 border rounded-lg focus:ring-[#6B21A8] focus:outline-none" />
-              <button type="submit" className="w-full bg-[#6B21A8] text-white py-3 rounded-lg font-semibold hover:bg-[#581c87] transition">
-                Submit
-              </button>
-            </form>
-            <button
-              onClick={() => setShowForm(false)}
-              className="absolute top-3 right-3 text-gray-500 hover:text-red-500 text-2xl"
-            >
-              &times;
-            </button>
-          </div>
-        </div>
-      )}
     </>
   );
 }

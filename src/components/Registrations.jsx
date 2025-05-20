@@ -55,6 +55,18 @@ export default function RegistrationFinal() {
                 </p>
               </div>
             </div>
+
+            {/* CTA Button for Desktop */}
+            <div className="mt-10">
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSd18p5kSjX9nYOT_hsExgK8kGZsYq0Fdf9N2mzq86TmbfBkGA/viewform?pli=1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white text-[#6B21A8] font-semibold px-6 py-3 rounded-full shadow-lg inline-block"
+              >
+                Register Now
+              </a>
+            </div>
           </div>
 
           {/* RIGHT IMAGE */}
@@ -117,11 +129,16 @@ export default function RegistrationFinal() {
           </div>
         </div>
 
-        {/* CTA Button */}
+        {/* CTA Button for Mobile */}
         <div className="mt-10 text-center">
-          <button className="bg-white text-[#6B21A8] font-semibold px-6 py-3 rounded-full shadow-lg">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSd18p5kSjX9nYOT_hsExgK8kGZsYq0Fdf9N2mzq86TmbfBkGA/viewform?pli=1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-white text-[#6B21A8] font-semibold px-6 py-3 rounded-full shadow-lg inline-block"
+          >
             Register Now
-          </button>
+          </a>
         </div>
       </section>
     </>

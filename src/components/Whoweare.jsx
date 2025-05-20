@@ -1,8 +1,4 @@
-import { useState } from "react";
-
 export default function RegisterInfo() {
-  const [showForm, setShowForm] = useState(false);
-
   return (
     <>
       {/* Desktop & Tablet View */}
@@ -45,16 +41,18 @@ export default function RegisterInfo() {
         </div>
 
         <div className="mt-12 text-center">
-          <button
-            onClick={() => setShowForm(true)}
-            className="border px-6 py-2 rounded transition font-medium text-[#6B21A8] border-[#6B21A8] hover:bg-[#6B21A8] hover:text-white"
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSd18p5kSjX9nYOT_hsExgK8kGZsYq0Fdf9N2mzq86TmbfBkGA/viewform?pli=1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border px-6 py-2 rounded transition font-medium text-[#6B21A8] border-[#6B21A8] hover:bg-[#6B21A8] hover:text-white inline-block"
           >
             Register Now
-          </button>
+          </a>
         </div>
       </section>
 
-      {/* Mobile View (White Background Premium Design) */}
+      {/* Mobile View */}
       <section className="block md:hidden bg-white py-16 px-6 font-['Lato'] text-gray-800">
         <div className="text-center mb-10">
           <p className="text-sm uppercase font-semibold text-[#6B21A8]">JuristQuest 2025</p>
@@ -96,39 +94,16 @@ export default function RegisterInfo() {
         </div>
 
         <div className="text-center">
-          <button
-            onClick={() => setShowForm(true)}
-            className="bg-[#6B21A8] text-white font-semibold px-6 py-3 rounded-full shadow-md"
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSd18p5kSjX9nYOT_hsExgK8kGZsYq0Fdf9N2mzq86TmbfBkGA/viewform?pli=1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#6B21A8] text-white font-semibold px-6 py-3 rounded-full shadow-md inline-block"
           >
             Register Now
-          </button>
+          </a>
         </div>
       </section>
-
-      {/* Modal Form */}
-      {showForm && (
-        <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center">
-          <div className="bg-white bg-opacity-90 backdrop-filter backdrop-blur-lg rounded-2xl shadow-2xl p-8 w-[90%] max-w-lg font-['Lato'] relative">
-            <h3 className="text-2xl font-bold text-gray-800 mb-6">Fill the Form</h3>
-
-            <form className="space-y-4">
-              <input type="text" placeholder="Full Name" className="w-full px-4 py-3 border rounded-lg focus:ring-[#6B21A8] focus:outline-none" />
-              <input type="email" placeholder="Email Address" className="w-full px-4 py-3 border rounded-lg focus:ring-[#6B21A8] focus:outline-none" />
-              <input type="tel" placeholder="Mobile Number" className="w-full px-4 py-3 border rounded-lg focus:ring-[#6B21A8] focus:outline-none" />
-              <input type="text" placeholder="Full Address" className="w-full px-4 py-3 border rounded-lg focus:ring-[#6B21A8] focus:outline-none" />
-              <input type="text" placeholder="District" className="w-full px-4 py-3 border rounded-lg focus:ring-[#6B21A8] focus:outline-none" />
-              <button type="submit" className="w-full bg-[#6B21A8] text-white py-3 rounded-lg font-semibold hover:bg-[#4C1D95] transition">Submit</button>
-            </form>
-
-            <button
-              onClick={() => setShowForm(false)}
-              className="absolute top-4 right-4 text-gray-500 hover:text-red-500 text-xl"
-            >
-              &times;
-            </button>
-          </div>
-        </div>
-      )}
     </>
   );
 }
